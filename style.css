@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+font-family: 'Public Sans', sans-serif;
+}
+:root{
+    --GrayishBlue:hsl(233, 8%, 62%);
+    --LightGrayishBlue: hsl(220, 16%, 96%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+ --White: hsl(0, 0%, 100%);
+ --DarkBlue: hsl(233, 26%, 24%);
+--LimeGreen: hsl(136, 65%, 51%);
+--BrightCyan: hsl(192, 70%, 51%);
+--Fontsize: 18px;
+--box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+body
+{
+    scroll-behavior: smooth;
+}
+li , ul,a
+{
+    list-style: none;
+    text-decoration: none;
+} 
+header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0;
+    background-color: var(----White);
+    box-shadow: var(--box-shadow);
+    z-index: 9999999999999;
+}
+.logo
+{
+    padding: .786rem;
+}
+.logo img
+{
+    width: 100%;
+}
+nav
+{
+    margin: .67rem;
+    padding: .67rem;
+}
+
+nav ul li 
+{
+    margin: 0 7px;
+    line-height: 20px;
+    cursor: pointer;
+   
+    text-transform: capitalize;
+    display: inline-block;
+  
+}
+nav ul li a
+{
+       color: var(--GrayishBlue);
+        font-size: var(--Fontsize);
+}
+
+nav ul li a:hover
+{
+    color: var(--LimeGreen);
+    border-bottom: 2px solid var(--LimeGreen);
+    transition: all .3s linear;
+}
+.btn
+{
+    background-color: var(--LimeGreen);
+    padding: .68rem;
+    color: var(--White);
+    border-radius: 10px;
+    font-size: var(--Fontsize);
+    text-transform: capitalize;
+
+}
+.btn:hover
+{
+    background-color: transparent;
+    border: 1px solid var(--LimeGreen);
+    color: var(--LimeGreen);
+}
+#menu
+{
+    font-size: 1.5rem;
+    display: none;
+}
+.hero-section
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    background-color: var(--VeryLightGray);
+}
+.conatiner
+{
+    padding: 1rem;
+}
+.intro
+{
+    flex-basis: 40%;
+    margin-left: 50px;
+    position: relative;
+}
+.intro .heading
+{
+    padding: .68rem;
+    letter-spacing: 1;
+    font-weight: 400;
+    font-size: 3rem;
+}
+.para
+{
+    padding: 1rem;
+    margin-bottom: .68rem;
+    color:var(--GrayishBlue) ;
+}
+.home_img
+{
+    background-image: url(images/bg-intro-desktop.svg);
+    background-position: cover;
+    position: relative;
+    flex-basis: 60%;
+    padding: 1rem;
+    overflow: hidden;
+    padding-top: -200px;
+    height: 510px;
+}
+.home_img img
+{
+    width: 90%;
+    position: relative;
+    top: -20px;
+    right: -150px
+}
+.about-section
+{
+    padding: 1rem 2rem;
+    margin-top: 5rem;
+    width: 100vw;
+
+
+}
+
+.services
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin: .68rem;
+}
+.services img
+{
+    padding: .68rem;
+}
+.card 
+{
+    box-sizing: var(--box-shadow);
+}
+.artical
+{
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+            width: 40%;
+            margin-top: 3rem;
+            border-radius: 10px;
+    
+}
+.blog-section
+{
+    padding: 2rem;
+    background-color: var(--VeryLightGray);
+}
+.artical img
+{
+    width: 100%;
+
+}
+.details
+{
+    margin: auto;
+    text-align: center;
+}
+small
+{
+    text-align: center;
+}
+.leatest_blog
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+h4
+{
+    padding: 1rem;
+}
+footer
+{
+    background-color: var(--DarkBlue);
+    color: white;
+}
+.social_media img
+{
+    margin: .4rem;
+    cursor: pointer;
+    padding: .4rem;
+
+}
+.footerInfo
+{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.part2 ul  a
+{
+    color: wheat;
+    margin: .6rem;
+}
+.part3 h3
+{
+    padding-top: 1rem;
+}
+
+/* ----------media quary  */
+
+@media (max-width:700px){
+   
+
+.request
+{
+    display: none;
+
+}
+#menu
+{
+    display: block;
+    margin-right: 40px ;
+
+}
+.logo img
+{
+    width: 100%;
+}
+nav ul 
+{
+   width: 100%;
+   background-color: var(--DarkBlue);
+    box-shadow: var(--box-shadow);
+   position: absolute;
+   top: 50px;
+   right: 0;
+   z-index: 999999999;
+   transform: translateX(-100%);
+       
+}
+nav ul li 
+{
+     display: block;
+     margin: 10px 0;
+     text-align: center;
+     padding: 1rem;
+     
+}
+nav ul li a
+{
+    color: white;
+}
+.active  nav ul 
+{
+    transform: translateX(0);
+     transition: all 0.3s ease-in-out;
+}
+
+.hero-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column-reverse;
+}
+.home_img img
+{
+    width: 100%;
+    position: relative;
+    top: -20px;
+    right: 0px
+
+}
+.intro .heading {
+    padding: .6rem;
+    letter-spacing: 1;
+    font-weight: 400;
+    font-size: 2rem;
+}
+.intro {
+    margin: auto 2rem;
+    text-align: center;
+    height: 100vh;
+    padding-bottom: 2rem;
+
+}
+
+.services
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.about
+{
+    text-align:left;
+    font-weight: 24px;
+}
+.leatest_blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+flex-direction: column;
+    gap: 3rem;
+}
+.artical
+{
+    width: 100%;
+}
+.footerInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.part2
+{
+    margin-bottom: 1rem;
+}
+
+
+}
